@@ -28,16 +28,18 @@ time.sleep(0.5); print("    Rating: M for Mature")
 
 con = input("[S/E] ").upper()
 if con == "S":
-        print("LOADING", end="")
-        time.sleep(1); print(".", end="", flush=True)
-        time.sleep(1); print(".", end="", flush=True)
-        time.sleep(1); print(".", end="", flush=True)
-        time.sleep(1); print(".", end="", flush=True)
-        time.sleep(1.5); print("..", end="", flush=True)
-        print()
+    print("LOADING", end="")
+    num_dots = random.randint(3, 7)
+    for _ in range(num_dots):
+        time.sleep(random.uniform(0.3, 1.0))
+        print(".", end="", flush=True)
+    print()
 if con == "E":
-        print("EXITING", end="")
-        time.sleep(1); print(".", end="", flush=True)
-        time.sleep(2); print("..", end="", flush=True)
-        print()
-        sys.exit()
+    print("EXITTING", end="")
+    num_dots = random.randint(3, 7)
+    for _ in range(num_dots):
+        time.sleep(random.uniform(0.3, 1.0))
+        print(".", end="", flush=True)
+    print()
+if con not in ["S", "E"]:
+    print("NOT VALID OPTION. STARTING PROGRAM ANYWAYS.")
