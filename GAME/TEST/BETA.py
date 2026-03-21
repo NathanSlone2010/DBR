@@ -6,11 +6,7 @@ from random import randint
 #These are the req modules
 
 
-print("NO ERRORS")
-#This allows users to know if the program started correctly
-
-
-cylinder_size = 6
+cylinder_size = 8
 odds = 4 / cylinder_size #Change this when developing the game.
 days = 0
 count = 0
