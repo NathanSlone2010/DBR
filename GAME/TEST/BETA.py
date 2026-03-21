@@ -40,7 +40,8 @@ if con == "E":
     for _ in range(num_dots):
         time.sleep(random.uniform(0.3, 1.0))
         print(".", end="", flush=True)
-    print()
+        sys.exit()
+        print()
 if con not in ["S", "E"]:
     print("NOT VALID OPTION. STARTING PROGRAM ANYWAYS.")
 #This allows starting the game.
@@ -52,7 +53,7 @@ while True:
 	time.sleep(1); print("1. Shoot yourself..")
 	time.sleep(1.5); print("2. Shoot the man across the table...")
 	time.sleep(2); print("3. REVENGE....")
-	choice = input("C:")
+	choice = input("C: ")
 
 	bullet = random.randint(1, cylinder_size)
 	position = random.randint(1, cylinder_size)
