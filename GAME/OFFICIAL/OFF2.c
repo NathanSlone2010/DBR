@@ -32,7 +32,7 @@ int main() {
     sleep_seconds(1); printf("Remaster of DEAD'S ROULETTE\n");
     sleep_seconds(0.5); printf(" Date of Production: 3/17/26\n");
     sleep_seconds(0.5); printf("  GitHub: NathanSlone2010\n");
-    sleep_seconds(0.5); printf("   ALPHA BUILD\n");
+    sleep_seconds(0.5); printf("   VERSION 01.00.00 [OFFICIAL RELEASE]\n");
     sleep_seconds(0.5); printf("    Rating: M for Mature\n");
     printf("!!TYPE 'S' to start or 'E' to exit!!\n");
 
